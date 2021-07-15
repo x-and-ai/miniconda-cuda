@@ -1,0 +1,6 @@
+source config
+
+TEST_SCRIPT="/opt/cuda_samples/deviceQuery"
+CUDA_SAMPLE_HOST_PATH="$HOME/NVIDIA_CUDA-11.3_Samples/bin/x86_64/linux/release"
+docker run --rm -it --gpus all --name $TEST_CONTAINER_NAME \
+-v $CUDA_SAMPLE_HOST_PATH:/opt/cuda_samples $TEST_IMAGE_NAME bash -c "$TEST_SCRIPT"
