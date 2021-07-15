@@ -1,22 +1,26 @@
-# xandai/python-cuda
+# xandai/miniconda-cuda
 
-[Docker Hub Link](https://hub.docker.com/r/xandai/python-cuda)
+[Docker Hub Link](https://hub.docker.com/r/xandai/miniconda-cuda)
 
-[GitHub Link](https://github.com/x-and-ai/python-cuda)
+[GitHub Link](https://github.com/x-and-ai/miniconda-cuda)
+
+## Prerequisite
+
+- [Docker](https://docs.docker.com/get-docker/)
+- [NVIDIA Docker](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html)
 
 ## Description
 
-This is a nvidia-docker image for Python3 development.
+This is a nvidia-docker image for Python3 development using Miniconda.
 
 ## Tags and Versions
 
-| tag        | python        | cuda              |
-|:----------:|:-------------:|:-----------------:|
-| 1.0.0      | 3.6.7-1~18.04 | 10.0-cudnn7-devel |
-| 1.1.0      | 3.6.12        | 10.2-cudnn7-devel |
+|  tag  | miniconda  |             cuda              |
+| :---: | :--------: | :---------------------------: |
+| 1.0.0 | py39_4.9.2 | 10.1-cudnn7-devel-ubuntu18.04 |
 
 ## Usage
 
 ``` sh
-docker run --rm --runtime=nvidia xandai/python-cuda:1.1.0 python -c "print('Hello, world')"
+docker run --rm -it --gpus all xandai/miniconda-cuda:1.0.0 python -c "print('Hello, world')"
 ```
