@@ -18,6 +18,7 @@ This is a nvidia-docker image for Python3 development using Miniconda.
 |  tag  | miniconda  |             cuda              |
 | :---: | :--------: | :---------------------------: |
 | 1.0.0 | py39_4.9.2 | 10.1-cudnn7-devel-ubuntu18.04 |
+| 1.1.0 | py39_4.9.2 | 10.2-cudnn8-devel-ubuntu18.04 |
 
 ## Usage
 

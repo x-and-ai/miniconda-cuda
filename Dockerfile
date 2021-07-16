@@ -1,4 +1,4 @@
-ARG CUDA_IMAGE_TAG=10.1-cudnn7-devel-ubuntu18.04
+ARG CUDA_IMAGE_TAG=10.2-cudnn8-devel-ubuntu18.04
 
 FROM nvidia/cuda:${CUDA_IMAGE_TAG}
 
